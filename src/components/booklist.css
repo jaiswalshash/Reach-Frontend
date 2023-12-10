@@ -13,11 +13,3 @@
         font-size: 1.3rem;
     }
 }
-#content {
-    @media (max-width: 800px) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-}

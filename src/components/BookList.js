@@ -50,9 +50,9 @@ function BookList({ enableList, bestMatch }) {
         <span className="text-pink-400">Voila! </span>
         Here is your perfect match! 🥳
       </h1>
-      <div id="content" className="flex gap-5 text-black dark:text-white h-fit">
+      <div id="content" className="flex flex-col justify-center items-center lg:flex-row gap-5 text-black dark:text-white h-fit">
         <img src={bestMatch.coverImage} style={{ width: 128, height: 208, objectFit: 'cover' }} alt="book-cover" />
-        <div id="book-content" className="flex flex-col gap-5 font-montesrrat text-[0.9rem]">
+        <div id="book-content" className="flex flex-col gap-[0.5rem] lg:gap-5 text-[0.8] font-montesrrat  lg:text-[0.9rem]">
           <div>
             <span className="font-bold">Title: {bestMatch.title}</span>
           </div>
