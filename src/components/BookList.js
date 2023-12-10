@@ -44,7 +44,8 @@ function BookList({ enableList, bestMatch }) {
   };
 
   return (
-    <div ref={dialogRef} style={{ zIndex: 82 }} id="booklist" className="fixed w-[70%] h-[70%] bg-opacity-17 rounded-lg bg-[rgba(255,255,255,0.8)] dark:bg-[rgba(0,0,0,0.8)] shadow-md backdrop-filter backdrop-blur-md border-opacity-45 px-16 py-7">
+    <div ref={dialogRef} style={{ zIndex: 82 }} className="fixed lg:w-[70%] lg:h-[70%] bg-opacity-17 rounded-lg bg-[rgba(255,255,255,0.8)] dark:bg-[rgba(0,0,0,0.8)] 
+    shadow-md backdrop-filter backdrop-blur-md border-opacity-45 lg:px-16 lg:py-7 w-full h-full p-7 md:p-4">
       <h1 id="heading" className="w-full flex justify-center text-4xl mb-7 items-center text-gray-600 font-palanquin dark:text-white">
         <span className="text-pink-400">Voila! </span>
         Here is your perfect match! 🥳
