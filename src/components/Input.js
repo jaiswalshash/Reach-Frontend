@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import "./input.css";
 import Loader from "./Loader";
-import {Select} from 'antd'
+import { Select } from "antd";
 
 function Input({ enableList, bestMatch }) {
   const [loader, setLoader] = useState(false);
@@ -14,9 +14,8 @@ function Input({ enableList, bestMatch }) {
         mood: mood,
         personality: personality,
       };
-  
-      // Make a POST request to localhost:3001/match_books
-      fetch("http://localhost:3001/match_books", {
+
+      fetch("https://reach-harmony-api.onrender.com/match_books", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -25,8 +24,6 @@ function Input({ enableList, bestMatch }) {
       })
         .then((response) => response.json())
         .then((data) => {
-          // Handle the response data if needed
-          console.log("Response:", data);
           bestMatch(data.bestMatch);
         })
         .catch((error) => {
@@ -42,35 +39,33 @@ function Input({ enableList, bestMatch }) {
       alert("Mood and personality are required!");
     }
   };
-  
+
   const moodOptions = [
-    { value: 1, label: 'Happy' },
-    { value: 2, label: 'Neutral' },
-    { value: 3, label: 'Sad' },
-    { value: 4, label: 'Excited ' },
-    { value: 5, label: 'Stressed' },
-    { value: 6, label: 'Relaxed' },
-    { value: 7, label: 'Angry' },
-    { value: 8, label: 'Confused' },
-    { value: 9, label: 'Content' },
-    { value: 10, label: 'Energetic' },
+    { value: 1, label: "Happy" },
+    { value: 2, label: "Neutral" },
+    { value: 3, label: "Sad" },
+    { value: 4, label: "Excited " },
+    { value: 5, label: "Stressed" },
+    { value: 6, label: "Relaxed" },
+    { value: 7, label: "Angry" },
+    { value: 8, label: "Confused" },
+    { value: 9, label: "Content" },
+    { value: 10, label: "Energetic" },
   ];
-  
+
   // Dummy data for personality options
   const personalityOptions = [
-    { value: 1, label: 'Sweet' },
-    { value: 2, label: 'Spicy' },
-    { value: 3, label: 'Savory' },
-    { value: 4, label: 'Bitter' },
-    { value: 5, label: 'Tangy' },
-    { value: 6, label: 'Umami' },
-    { value: 7, label: 'Zesty' },
-    { value: 8, label: 'Minty' },
-    { value: 9, label: 'Creamy' },
-    { value: 10, label: 'Fruity' },
+    { value: 1, label: "Sweet" },
+    { value: 2, label: "Spicy" },
+    { value: 3, label: "Savory" },
+    { value: 4, label: "Bitter" },
+    { value: 5, label: "Tangy" },
+    { value: 6, label: "Umami" },
+    { value: 7, label: "Zesty" },
+    { value: 8, label: "Minty" },
+    { value: 9, label: "Creamy" },
+    { value: 10, label: "Fruity" },
   ];
-  
-
 
   const [mood, setMood] = useState(null);
   const [personality, setPersonality] = useState(null);
@@ -78,14 +73,14 @@ function Input({ enableList, bestMatch }) {
   const handleClear = () => {
     setMood(null);
     setPersonality(null);
-  }
+  };
 
   return (
     <div
       id="input-box"
       className="max-w-md w-full bg-white p-6 rounded-lg shadow-lg text-white dark:text-black bg-opacity-40 backdrop-filter backdrop-blur-18 border border-opacity-20 border-white"
     >
-      {loader && <Loader/>}
+      {loader && <Loader />}
       <div
         className="text-pink-500 w-full font-bold flex justify-center items-center sm:text-lg dark:text-pink-200 font-montserrat text-xl leading-8 mt-4
         mb-4"
@@ -97,7 +92,7 @@ function Input({ enableList, bestMatch }) {
       </label>
       <Select
         showSearch
-        style={{ width: '100%' }}
+        style={{ width: "100%" }}
         placeholder="Select mood"
         optionFilterProp="label"
         onChange={(value) => setMood(value)}
@@ -110,7 +105,7 @@ function Input({ enableList, bestMatch }) {
       </label>
       <Select
         showSearch
-        style={{ width: '100%' }}
+        style={{ width: "100%" }}
         placeholder="Select personality"
         optionFilterProp="label"
         onChange={(value) => setPersonality(value)}
@@ -120,7 +115,10 @@ function Input({ enableList, bestMatch }) {
       />
 
       <div className="flex justify-between items-center mt-4">
-        <button onClick={handleClear} className="border mt-4 p-2 w-[5rem] bg-yellow-400 rounded-lg shadow-lg text-white hover:translate-y-[-2px] transition-transform duration-300">
+        <button
+          onClick={handleClear}
+          className="border mt-4 p-2 w-[5rem] bg-yellow-400 rounded-lg shadow-lg text-white hover:translate-y-[-2px] transition-transform duration-300"
+        >
           Clear
         </button>
         <button
