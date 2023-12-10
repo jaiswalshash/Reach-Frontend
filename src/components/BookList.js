@@ -35,7 +35,7 @@ function BookList({ enableList, bestMatch }) {
     enableList(false);
   };
 
-  const truncatedDescription = truncateDescription(bestMatch.description, 700);
+  const truncatedDescription = truncateDescription(bestMatch.description, 300);
   const truncatedRating = bestMatch.rating.toFixed(1);
 
   const handleSearch = () => {

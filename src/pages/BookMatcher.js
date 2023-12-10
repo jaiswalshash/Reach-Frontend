@@ -19,8 +19,8 @@ function BookMatcher() {
         <div className="absolute bottom-[-10.74rem] left-3 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-2000"></div>
         <div className="absolute bottom-4 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-4000"></div>
       </div>
-      <div className="z-8 w-full flex justify-between flex-col lg:flex-row">
-        <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
+      <div className="z-8 w-full flex justify-between items-center flex-col lg:flex-row">
+        <div className="relative xl:w-full flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
           <p className="text-xl font-montserrat text-yellow-400 ">
             Dive into a World Tailored Just for You
           </p>
@@ -31,7 +31,7 @@ function BookMatcher() {
          dark:text-gray-300 text-5xl"
           >
             <span
-              className="xl:whitespace-nowrap
+              className=" w-full
             z-5 relative pr-10
           "
             >

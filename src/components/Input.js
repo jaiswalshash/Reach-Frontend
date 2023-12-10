@@ -1,5 +1,4 @@
 import { React, useState } from "react";
-import "./input.css";
 import Loader from "./Loader";
 import { Select } from "antd";
 
@@ -78,7 +77,9 @@ function Input({ enableList, bestMatch }) {
   return (
     <div
       id="input-box"
-      className="max-w-md w-full bg-white p-6 rounded-lg shadow-lg text-white dark:text-black bg-opacity-40 backdrop-filter backdrop-blur-18 border border-opacity-20 border-white"
+      style={{zIndex:"5"}}
+      className="max-w-md w-full lg:h-[100%] mb-16 lg:mb-0 bg-white p-6 rounded-lg shadow-lg text-white
+       dark:text-black bg-opacity-40 backdrop-filter backdrop-blur-18 border border-opacity-20 border-white"
     >
       {loader && <Loader />}
       <div
