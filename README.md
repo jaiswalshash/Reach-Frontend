@@ -39,8 +39,8 @@ Choosing this project was not a tough decision for me because I am a book lover 
 
 ### How to use the application?
 
-Fill out the form, select the appropriate answers for yourself, and submit the form. If you're using the application for the first time, kindly wait for some time as we are using a free hosting service, and it takes a moment to spin up the server.
+Fill out the form, select the appropriate answers for yourself, and submit the form. If you're using the application for the first time, kindly wait for some time as I'm using a free hosting service, and it takes a moment to spin up the server.
 
 ### How to setup this project locally?
 
-The application has two parts: client and server. Due to hosting reasons, I have two different repositories for the application. Clone the [client](https://github.com/jaiswalshash/Reach-Frontend) repository and run the `npm install` command. After the installation is done, run the `npm start` command in your terminal. Clone the [server](https://github.com/jaiswalshash/Reach-Backend) repository and run `npm install`. After the installation is complete, create a `.env` file in the root directory and paste this in the file: `MONGODB_URI='mongodb+srv://jaiswalshashank123:jaiswal12345@rb-db.xoktvzv.mongodb.net/book_matching'`. Finally, run `node index.js`.
+The application has two parts: client and server. Due to hosting reasons, I have two different repositories for the application. Clone the [client](https://github.com/jaiswalshash/Reach-Frontend) repository and run the `npm install` command. After the installation is done, run the `npm start` command in your terminal. 
