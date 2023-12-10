@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Welcome to Harmony Pages!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi! Welcome to **Harmony Pages**, your personalized gateway to the perfect literary escape! Harmony Pages is a unique web application designed to harmonize your personality with literature genres and recommend specific book that resonate with your individuality. Say goodbye to the struggle of finding the ideal book—Harmony Pages simplifies the process by utilizing a sophisticated algorithm that matches your personality traits with the enchanting world of literature. 
 
-## Available Scripts
 
-In the project directory, you can run:
+# **How It Works:**
 
-### `npm start`
+At the core of [Harmony Pages](https://reach-frontend.vercel.app/) is a user-friendly form that requires just two thoughtfully crafted questions. These questions are designed to delve into the depths of your preferences and characteristics, capturing the essence of what makes you unique. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Front-end
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The **[Harmony page's frontend](https://github.com/jaiswalshash/Reach-Frontend)** is meticulously crafted with the end user at the forefront of design considerations. Drawing from the perspective of an **avid reader**, the interface is intuitively structured with two straightforward `select fields`, prompting users to engage with **thoughtfully curated questions**. To elevate the user experience, a **dark mode option** has been seamlessly integrated, providing users with a visually comfortable and customizable environment, (PS: It's **not Black**). Taking user accessibility to the next level, the Harmony page boasts impeccable `mobile responsiveness`, ensuring a seamless and enjoyable experience across various devices. This commitment to adaptability reflects our dedication to making the platform accessible anytime, anywhere. Furthermore, we've incorporated a convenient feature that allows users to conduct a **Google search for recommended book** directly within the application. This integration not only streamlines the process of discovering new reads but also enhances the Harmony page's functionality as a comprehensive tool for **literary exploration**.. 
 
-### `npm test`
+### TechStack:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ - **ReactJS:**  Harmony Pages is built on the ReactJS library, the reason is for its flexibility, efficiency, and seamless user experience. React's component-based architecture allows for the creation of reusable UI components, promoting a modular and maintainable codebase. This not only facilitates development but also enhances the scalability of the application as it continues to evolve.
+ 
+ - **Tailwind CSS:** Tailwind CSS was chosen as the styling framework for Harmony Pages due to its utility-first approach and flexibility. Tailwind allows for the rapid development of a visually appealing and responsive user interface without the need to write custom CSS. The extensive set of pre-built utility classes eliminates the need for creating a large stylesheet, contributing to a more lightweight application.
 
-### `npm run build`
+## Back-end
+The [Harmony Page backend](https://github.com/jaiswalshash/Reach-Backend) serves as the engine powering the book matching functionality. Designed with efficiency and flexibility in mind, the backend leverages a combination of technologies to ensure a seamless experience for users seeking personalized book recommendations.
+The Books Database is created with the help of [Google Books API](https://developers.google.com/books).
+User's input is quantified on two parameters and so does the book is quantified on two parameters. The vector of two values is calculated using Euclidean distance between two vectors.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`
+function calculateDifference(vector1, vector2) { 
+return Math.sqrt(Math.pow(vector1[0] - vector2[0], 2) + Math.pow(vector1[1] - vector2[1], 2)); 
+}` 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### TechStack:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ - **NodeJS:** NodeJS was chosen because of it's low complexity and fast server-side JavaScript development, and it boasts a vast npm ecosystem for streamlined package management and cross-platform compatibility.
 
-### `npm run eject`
+ - **MongoDB:** MongoDB was preferred for its flexible NoSQL architecture, facilitating dynamic data storage, scalability, and seamless integration with NodeJS.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Why I chose Book Matching Web Application?
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Choosing this project was not a tough decision for me because I am a book lover myself. It provided me with the freedom to build the application the way I envisioned it. The design reflects my personality—colorful and elegant. Building this application was both fun and challenging, especially when working on it alongside other commitments. I learned so many things during the process.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### How to use the application?
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Fill out the form, select the appropriate answers for yourself, and submit the form. If you're using the application for the first time, kindly wait for some time as we are using a free hosting service, and it takes a moment to spin up the server.
 
-## Learn More
+### How to setup this project locally?
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The application has two parts: client and server. Due to hosting reasons, I have two different repositories for the application. Clone the [client](https://github.com/jaiswalshash/Reach-Frontend) repository and run the `npm install` command. After the installation is done, run the `npm start` command in your terminal. Clone the [server](https://github.com/jaiswalshash/Reach-Backend) repository and run `npm install`. After the installation is complete, create a `.env` file in the root directory and paste this in the file: `MONGODB_URI='mongodb+srv://jaiswalshashank123:jaiswal12345@rb-db.xoktvzv.mongodb.net/book_matching'`. Finally, run `node index.js`.
